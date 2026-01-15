@@ -103,7 +103,7 @@ Configuration is stored in `~/.config/dictation/config.json`:
   "hotkey": ["F10"],
   "mode": "toggle",
   "streaming": true,
-  "streaming_interval": 3.0,
+  "streaming_interval": 1.0,
   "silence_threshold": 0.005,
   "audio_normalize": true,
   "audio_compress": true,

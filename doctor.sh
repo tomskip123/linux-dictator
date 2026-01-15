@@ -54,7 +54,7 @@ case "$1" in
   "hotkey": ["F10"],
   "mode": "toggle",
   "streaming": true,
-  "streaming_interval": 3.0
+  "streaming_interval": 1.0
 }
 EOF
         echo "Config generated at: $CONFIG_FILE"

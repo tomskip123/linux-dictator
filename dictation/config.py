@@ -21,7 +21,7 @@ class Config:
     hotkey: list[str] = field(default_factory=lambda: ["F10"])
     mode: HotkeyMode = "toggle"
     streaming: bool = True
-    streaming_interval: float = 3.0
+    streaming_interval: float = 1.0
     silence_threshold: float = 0.005
     audio_normalize: bool = True
     audio_compress: bool = True
