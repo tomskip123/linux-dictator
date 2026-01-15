@@ -1,0 +1,8 @@
+[Unit]
+Description=ydotool daemon (for Dictation)
+
+[Service]
+ExecStart=/usr/bin/ydotoold --socket-path=%t/.ydotool_socket --socket-perm=0666
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Dictation - Local speech-to-text
+After=ydotoold.service
+Wants=ydotoold.service
+
+[Service]
+ExecStart=%h/.local/bin/dictation
+Restart=on-failure
+RestartSec=5
+Environment=YDOTOOL_SOCKET=%t/.ydotool_socket PYTHONUNBUFFERED=1
+PassEnvironment=DISPLAY WAYLAND_DISPLAY DBUS_SESSION_BUS_ADDRESS
+
+[Install]
+WantedBy=default.target
